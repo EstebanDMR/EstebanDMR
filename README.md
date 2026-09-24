@@ -2,15 +2,15 @@
 **Systems Engineering student · Backend systems · Graph algorithms · Data**  
 Barranquilla, Colombia · UTC−5
 
-> Systems Engineering student in my final stage at Universidad de la Costa. I design and build production-grade software with a focus on backend architecture, graph algorithms, and data-driven systems. I care deeply about performance boundaries, clean interfaces, and predictable engineering.
+> Systems Engineering student in my final stage at Universidad de la Costa. I build projects focused on backend development, graph algorithms, web applications, and data analysis. I enjoy working through performance problems and writing clear, maintainable code.
 
-[LinkedIn](https://www.linkedin.com/in/estebandmr) &nbsp;·&nbsp; [GitHub](https://github.com/EstebanDMR) &nbsp;·&nbsp; [Email](mailto:esteban.mercado.r@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/estebandmr) &nbsp;·&nbsp; [GitHub](https://github.com/EstebanDMR) &nbsp;·&nbsp; [Email](mailto:mercadorachath@gmail.com)
 
 ---
 
 ## ⚡ MOOD MONITOR
 
-A small automated telemetry experiment. A Python engine turns the five most recent completed matches from **FC Barcelona** and **Junior FC de Barranquilla** into a mood score.
+A small automated experiment that turns the five latest completed matches from **FC Barcelona** and **Junior FC de Barranquilla** into my current developer mood.
 
 <!-- MOOD_START -->
 <picture>
@@ -20,13 +20,13 @@ A small automated telemetry experiment. A Python engine turns the five most rece
 <!-- MOOD_END -->
 
 <details>
-<summary><b>Behind the Engine (How this works)</b></summary>
+<summary><b>How the Mood Monitor works</b></summary>
 <br>
 
-* **Data Pipeline:** Pulls fixture schedules via ESPN's public endpoints for LaLiga and Liga BetPlay (no API key required).
-* **Algorithmic Weighting:** Extracts the 5 most recent completed matches per club and computes a normalized index ($Win = +2$, $Draw = 0$, $Loss = -2$), mapped strictly to $[0, 100]$.
-* **Automated Sync:** Runs twice daily via GitHub Actions (`.github/workflows/update-mood.yml`). The script updates the SVG when the match snapshot changes; the workflow commits the changed asset. The README image reference stays between the `MOOD_START` and `MOOD_END` tags.
-* **Fault Isolation:** Bypasses writes safely if the network drops or upstream payloads change.
+* **Results:** Python fetches match schedules from ESPN for LaLiga and Liga BetPlay, then takes each club's five latest completed matches.
+* **Score:** A win adds 2 points, a draw adds 0, and a loss subtracts 2. The combined result is mapped to a score from 0 to 100.
+* **Updates:** GitHub Actions runs the script twice daily. When results change, it regenerates the desktop and mobile SVG cards and updates the README image description.
+* **If data is unavailable:** Network errors or a response with no usable matches leave the existing README and cards in place.
 
 </details>
 
@@ -34,17 +34,17 @@ A small automated telemetry experiment. A Python engine turns the five most rece
 
 ## SELECTED ENGINEERING WORK
 
-A selection of systems I've architected and implemented, emphasizing algorithmic rigor, architectural isolation, and real scalability problems.
+Personal and academic projects where I worked on APIs, graph algorithms, web interfaces, and data analysis.
 
 ### 01 &nbsp;·&nbsp; [RouteOptimizer](https://github.com/EstebanDMR/RouteOptimizer)
-**Urban logistics pathfinding & graph optimization engine**
+**Route planning and graph algorithm visualizer**
 
-* **The Problem:** Last-mile urban delivery networks suffer exponential combinatorial overhead. Uninformed search algorithms evaluate too many radial branches, while off-the-shelf pathfinding libraries hide runtime memory consumption.
+* **The Project:** Built a route planning app to compare Dijkstra and A* on weighted graphs and show how each algorithm explores the network.
 * **Technical Highlights:**
-  * Implemented fundamental data structures **100% from scratch** in strict TypeScript: Adjacency Lists and a **Binary Min-Heap Priority Queue** guaranteeing $O(\log n)$ insertions and extractions.
-  * Search engine implementing **Dijkstra** (uninformed baseline) alongside **A\*** heuristic pathfinding with admissible Euclidean and Manhattan distance functions ($f(n) = g(n) + h(n)$).
-  * Built an internal **Step-by-Step Playback Recording Engine** that captures graph exploration snapshots for time-travel playback on an interactive SVG canvas.
-  * Verified algorithmic parity and edge-case handling with comprehensive **Vitest** test suites.
+  * Implemented an adjacency-list graph and a binary min-heap priority queue in TypeScript. Heap insertion and extraction take `O(log n)` time.
+  * Added **Dijkstra** and **A\*** with Euclidean and Manhattan distance heuristics.
+  * Recorded search steps for playback on an interactive SVG graph.
+  * Tested graph operations, algorithms, and API endpoints with **Vitest**.
 * **Stack:** TypeScript 5.5 · React 18 · Node.js / Express · Vite · Tailwind CSS · Vitest
 
 [Source Code ↗](https://github.com/EstebanDMR/RouteOptimizer)
@@ -52,29 +52,28 @@ A selection of systems I've architected and implemented, emphasizing algorithmic
 ---
 
 ### 02 &nbsp;·&nbsp; [SalesFlow CRM API](https://github.com/EstebanDMR/salesflow-crm-api)
-**Enterprise-grade RESTful API for commercial sales pipelines**
+**REST API for managing sales pipelines, clients, users, and deals**
 
-* **The Problem:** Production CRMs require robust transaction isolation, strict validation before persistence, role segregation, and perimeter defenses against brute-force attacks.
+* **The Project:** Built an API with authentication, role-based permissions, request validation, and controlled access to sales data.
 * **Technical Highlights:**
-  * Modular **Feature-First Layered Architecture** separating routing, authorization middlewares, domain controllers, and data services.
-  * Fine-grained **Role-Based Access Control (RBAC)** securing multi-user pipelines, client ownership, and deals.
-  * Strict schema validation via **Zod** across `params`, `query`, and `body` before reaching domain handlers.
-  * Structured JSON logging via **Pino** featuring request latency metrics and graceful process shutdown.
-  * Production hardening with **Helmet**, rate-limiting on authentication endpoints, and containerization via **Docker**.
-* **Stack:** Node.js (v24 LTS) · Express.js 5 · PostgreSQL 16 · Prisma ORM · JWT · Docker · Swagger / OpenAPI
+  * Organized routes, controllers, services, and middleware by feature.
+  * Added **RBAC** for users and sales data, plus **Zod** validation for request parameters, queries, and bodies.
+  * Used **Pino** for structured request logging, **Helmet** for HTTP headers, and rate limiting on authentication routes.
+  * Added a **Docker** setup and interactive **Swagger / OpenAPI** documentation.
+* **Stack:** Node.js · Express.js · PostgreSQL · Prisma ORM · JWT · Docker · Swagger / OpenAPI
 
 [Interactive Swagger Docs ↗](https://salesflow-crm-api-n44y.onrender.com/api/docs) &nbsp;·&nbsp; [Source Code ↗](https://github.com/EstebanDMR/salesflow-crm-api)
 
 ---
 
 ### 03 &nbsp;·&nbsp; [Base Electoral](https://github.com/EstebanDMR/base-electoral)
-**High-volume multi-user election data management platform**
+**Multi-user electoral data management platform**
 
-* **The Problem:** The initial version processed voter queries client-side, causing severe Main Thread freezes and high memory churn upon exceeding 1,000+ records.
+* **The Problem:** The first version loaded and filtered voter records in the browser. The project documents slowdowns once the dataset passed 1,000 records.
 * **Technical Highlights:**
-  * Refactored into a decoupled **Data Access Layer (DAL)** pattern separating UI components from backend queries.
-  * Re-engineered data ingestion using **server-side cursor pagination** (`limitToFirst` + `startAt`), reducing Time-to-View (TTV) and bounding client memory to a constant footprint.
-  * Multi-tenant role authentication, real-time reactive sync, and high-performance Excel reporting via **ExcelJS**.
+  * Moved Firebase access into a service layer, separate from the React views.
+  * Added bounded prefix-search queries with `startAt`, `endAt`, and `limitToFirst`. The main voter table still paginates the loaded records in the browser.
+  * Added team-based access, role checks, real-time role updates, and Excel exports with **ExcelJS**.
 * **Stack:** React 19 · Firebase · Vite · Tailwind CSS · ExcelJS · Lucide React
 
 [Live Platform ↗](https://base-electoral.vercel.app/) &nbsp;·&nbsp; [Source Code ↗](https://github.com/EstebanDMR/base-electoral)
@@ -82,10 +81,10 @@ A selection of systems I've architected and implemented, emphasizing algorithmic
 ---
 
 ### Secondary Spotlight &nbsp;·&nbsp; [University Analytics Dashboard](https://github.com/EstebanDMR/university-dashboard)
-**Academic trend analytics & data mining engine**
+**University data analytics dashboard**
 
-* Interactive multi-year analytics platform exploring university admission, enrollment, student retention, and institutional satisfaction.
-* Built during Data Mining coursework (Universidad de la Costa) to empower departmental leadership with visual data-driven insights.
+* An academic project for Data Mining coursework at Universidad de la Costa.
+* Visualizes admissions, enrollment, student retention, and satisfaction trends across years and departments.
 * **Stack:** Python 3 · Streamlit · Pandas · Matplotlib · Seaborn · Jupyter Notebook
 
 [Source Code ↗](https://github.com/EstebanDMR/university-dashboard)
@@ -94,10 +93,10 @@ A selection of systems I've architected and implemented, emphasizing algorithmic
 
 ## ENGINEERING FOCUS
 
-- **Backend & systems** — Modular REST APIs, transaction boundaries, RBAC, structured logs.
-- **Algorithms & graphs** — Custom min-heaps, Dijkstra, A* heuristics, runtime analysis.
-- **Data systems** — Cursor pagination, analytical pipelines, PostgreSQL modeling.
-- **Web platforms** — TypeScript, React interfaces, interactive SVG, Vite.
+- **Backend & systems** — REST APIs, authentication, RBAC, validation, structured logging.
+- **Algorithms & graphs** — Dijkstra, A*, binary min-heaps, graph traversal, heuristics.
+- **Data systems** — SQL, PostgreSQL, Firebase queries, data analysis with Pandas.
+- **Web platforms** — TypeScript, React, interactive SVG, Vite.
 
 ---
 
@@ -126,13 +125,13 @@ Technologies used across the projects above, grouped by the work they support.
 <h3 align="center">Databases</h3>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=postgres,firebase&amp;theme=dark" alt="PostgreSQL and Firebase logos" /><br />
-  <sub>PostgreSQL 16 · Firebase Realtime Database · Firestore</sub>
+  <sub>PostgreSQL · Firebase Realtime Database</sub>
 </p>
 
 <h3 align="center">Data / Analytics</h3>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=py&amp;theme=dark" alt="Python logo" /><br />
-  <sub>Pandas · NumPy · Matplotlib · Seaborn · Streamlit · Jupyter</sub>
+  <sub>Pandas · Matplotlib · Seaborn · Streamlit · Jupyter</sub>
 </p>
 
 <h3 align="center">Testing</h3>
@@ -151,20 +150,19 @@ Technologies used across the projects above, grouped by the work they support.
 
 ## ENGINEERING PRINCIPLES
 
-1. **Understand the domain before writing syntax.** Code is cheap to write and expensive to maintain; clear mental models prevent premature refactors.
-2. **Favor simple, decoupled boundaries.** Monolith or modular, keeping business logic isolated from data access pays dividends as systems evolve.
-3. **Algorithms matter when abstractions hit hardware limits.** Standard library helpers are great until you need guaranteed $O(\log n)$ operations or bounded memory.
-4. **Data should reveal operational truth.** Metrics and dashboards exist to answer concrete architectural and business questions, not just look pretty.
-5. **Resilient software fails gracefully.** Catch boundary errors, log with structured context, and build systems that degrade without corrupting state.
+1. **Understand before abstracting.** I prefer understanding the problem before choosing tools or architecture.
+2. **Keep boundaries clear.** Separating UI, business logic, and data access makes projects easier to change.
+3. **Measure before optimizing.** Performance work should solve a problem I've observed, not one I've imagined.
 
 ---
 
-## TELEMETRY & GET IN TOUCH
+## GET IN TOUCH
 
-I am open to software engineering and backend roles, collaborative open-source projects, and technical discussions around algorithms and systems design.
+I am looking for my first opportunity in software development, backend development, or data and analytics. I am also open to discussing these projects and collaborating on open-source work.
 
 * **LinkedIn:** [linkedin.com/in/estebandmr](https://www.linkedin.com/in/estebandmr)
 * **GitHub:** [github.com/EstebanDMR](https://github.com/EstebanDMR)
-* **Location:** Barranquilla, Colombia (UTC-5) &nbsp;·&nbsp; Remote ready
+* **Email:** [mercadorachath@gmail.com](mailto:mercadorachath@gmail.com)
+* **Location:** Barranquilla, Colombia
 
 **Build → Measure → Optimize → Scale → Repeat**
