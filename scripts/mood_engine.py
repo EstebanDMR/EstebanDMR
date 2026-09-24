@@ -33,14 +33,12 @@ if hasattr(sys.stderr, "reconfigure"):
 TEAMS = {
     "barcelona": {
         "name": "FC BARCELONA",
-        "league_code": "esp.1",
-        "league_label": "LaLiga",
+        "league_code": "all",
         "team_id": 83,
     },
     "junior": {
         "name": "JUNIOR FC",
-        "league_code": "col.1",
-        "league_label": "BetPlay",
+        "league_code": "all",
         "team_id": 4815,
     },
 }
@@ -83,6 +81,14 @@ MOOD_STATES = [
         "status": "DO NOT DISTURB",
         "quote": "Weekend redacted. Compiling in total silence.",
     },
+]
+
+DISPLAY_STATES = [
+    (9, "UNSTOPPABLE", "The results are in. Energy is high."),
+    (7, "GOOD", "A good run. Ready for the next challenge."),
+    (5, "STEADY", "Mixed results. Keeping a steady pace."),
+    (3, "NOT GREAT", "A rough stretch. Still showing up."),
+    (1, "MATCHDAY BLUES", "Rough matchday. Still ready to build."),
 ]
 
 HTTP_HEADERS = {
@@ -190,6 +196,15 @@ def calculate_mood(barca_matches: list, junior_matches: list) -> tuple:
     return normalized_score, selected_state["status"], selected_state["quote"]
 
 
+def display_mood(raw_score: int) -> tuple:
+    """Map the existing score to the playful 1–10 display and five states."""
+    value = max(1, min(10, 1 + round(9 * raw_score / 100)))
+    for minimum, status, quote in DISPLAY_STATES:
+        if value >= minimum:
+            return value, status, quote
+    raise AssertionError("No display state matched")
+
+
 def get_latest_fixture_date(barca_matches: list, junior_matches: list) -> str:
     """Find the most recent completed fixture date across both clubs."""
     dates = [m["date"] for m in barca_matches + junior_matches if m.get("date")]
@@ -209,7 +224,7 @@ def get_latest_fixture_date(barca_matches: list, junior_matches: list) -> str:
 def snapshot_key(barca_matches: list, junior_matches: list) -> str:
     """Track results and visual revisions without timestamp-only commits."""
     rows = [[m["date"], m["outcome"], m["score"]] for m in barca_matches + junior_matches]
-    return json.dumps({"visual": 3, "matches": rows}, ensure_ascii=True, separators=(",", ":"))
+    return json.dumps({"visual": 9, "matches": rows}, ensure_ascii=True, separators=(",", ":"))
 
 
 def generate_dashboard(score: int, status: str, quote: str, barca_matches: list,
@@ -217,7 +232,8 @@ def generate_dashboard(score: int, status: str, quote: str, barca_matches: list,
     """Render the desktop SVG while preserving the public engine interface."""
     return mood_visual.render_desktop(
         score, status, quote, barca_matches, junior_matches,
-        latest_fixture, generated_at, snapshot_key(barca_matches, junior_matches)
+        latest_fixture, generated_at, snapshot_key(barca_matches, junior_matches),
+        total=10
     )
 
 
@@ -226,7 +242,8 @@ def generate_mobile_dashboard(score: int, status: str, quote: str, barca_matches
     """Render the phone composition from the same match data."""
     return mood_visual.render_mobile(
         score, status, quote, barca_matches, junior_matches,
-        latest_fixture, generated_at, snapshot_key(barca_matches, junior_matches)
+        latest_fixture, generated_at, snapshot_key(barca_matches, junior_matches),
+        total=10
     )
 
 
@@ -242,7 +259,7 @@ def update_readme(score: int, status: str, barca_matches: list, junior_matches: 
         raise ValueError("Mood markers not found in README")
     barca_form = " ".join(m["outcome"] for m in barca_matches) or "N/A"
     junior_form = " ".join(m["outcome"] for m in junior_matches) or "N/A"
-    alt = escape(f"Mood Monitor: {score}/100, {status}. Barcelona {barca_form}; Junior {junior_form}.", quote=True)
+    alt = escape(f"Mood Monitor: {score}/10, {status}. Barcelona {barca_form}; Junior {junior_form}.", quote=True)
     image = ('<picture>\n'
              '  <source media="(max-width: 600px)" srcset="assets/mood-monitor-mobile.svg" />\n'
              f'  <img src="assets/mood-monitor.svg" alt="{alt}" />\n'
@@ -268,10 +285,10 @@ def update_svg(svg_content: str, svg_path: Path, key: str) -> bool:
 
 def run(readme_path: str = "README.md") -> int:
     """Main execution flow with fault isolation."""
-    print("=== The Mood Engine: Synchronizing Football Telemetry ===")
+    print("=== The Mood Engine: Updating Football Results ===")
     try:
         # 1. Fetch FC Barcelona schedule
-        print("Fetching FC Barcelona (LaLiga) fixtures...")
+        print("Fetching FC Barcelona fixtures across competitions...")
         barca_data = fetch_team_schedule(
             TEAMS["barcelona"]["league_code"], TEAMS["barcelona"]["team_id"]
         )
@@ -279,7 +296,7 @@ def run(readme_path: str = "README.md") -> int:
         print(f"  -> Extracted {len(barca_matches)} completed matches: {[m['outcome'] for m in barca_matches]}")
 
         # 2. Fetch Junior FC schedule
-        print("Fetching Junior FC (Liga BetPlay) fixtures...")
+        print("Fetching Junior FC fixtures across competitions...")
         junior_data = fetch_team_schedule(
             TEAMS["junior"]["league_code"], TEAMS["junior"]["team_id"]
         )
@@ -291,8 +308,9 @@ def run(readme_path: str = "README.md") -> int:
             return 0
 
         # 3. Calculate mood metrics
-        score, status, quote = calculate_mood(barca_matches, junior_matches)
-        print(f"\nCalculated Mood Score: {score}/100 | Status: {status}")
+        raw_score, _, _ = calculate_mood(barca_matches, junior_matches)
+        score, status, quote = display_mood(raw_score)
+        print(f"\nCalculated Mood Score: {raw_score}/100 → {score}/10 | Status: {status}")
         print(f"Quote: \"{quote}\"")
 
         # 4. Render the card; the timestamp changes only when results change.
