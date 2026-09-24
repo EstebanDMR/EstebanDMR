@@ -1,0 +1,44 @@
+name: Update Developer Mood Monitor
+
+on:
+  schedule:
+    # Runs twice daily at 06:00 and 18:00 UTC (01:00 and 13:00 COT)
+    - cron: '0 6,18 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mood-monitor
+  cancel-in-progress: true
+
+jobs:
+  update-mood:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Mood Engine
+        run: |
+          python scripts/mood_engine.py README.md
+
+      - name: Check for changes and commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          if git diff --quiet -- README.md assets/mood-monitor.svg assets/mood-monitor-mobile.svg; then
+            echo "No Mood Monitor changes detected. Skipping commit."
+          else
+            echo "Mood Monitor changes detected. Creating commit..."
+            git add README.md assets/mood-monitor.svg assets/mood-monitor-mobile.svg
+            git commit -m "chore(telemetry): sync live mood monitor"
+            git push
+          fi

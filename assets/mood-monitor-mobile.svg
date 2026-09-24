@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="604" viewBox="0 0 390 604" role="img" aria-labelledby="title desc" data-snapshot="{&quot;visual&quot;:3,&quot;matches&quot;:[[&quot;2026-08-31T19:30Z&quot;,&quot;W&quot;,&quot;5-2&quot;],[&quot;2026-09-06T14:15Z&quot;,&quot;W&quot;,&quot;5-0&quot;],[&quot;2026-09-13T14:15Z&quot;,&quot;W&quot;,&quot;4-2&quot;],[&quot;2026-09-16T19:30Z&quot;,&quot;W&quot;,&quot;7-2&quot;],[&quot;2026-09-19T19:00Z&quot;,&quot;W&quot;,&quot;3-1&quot;],[&quot;2026-08-26T23:20Z&quot;,&quot;L&quot;,&quot;2-4&quot;],[&quot;2026-08-29T23:30Z&quot;,&quot;D&quot;,&quot;1-1&quot;],[&quot;2026-09-06T01:30Z&quot;,&quot;D&quot;,&quot;3-3&quot;],[&quot;2026-09-13T01:20Z&quot;,&quot;L&quot;,&quot;0-1&quot;],[&quot;2026-09-20T19:00Z&quot;,&quot;W&quot;,&quot;4-1&quot;]]}">
+<title id="title">Matchday mood</title>
+<desc id="desc">Mood score 70 out of 100, status GOOD. Barcelona W W W W W; Junior L D D L W. Latest result 20 SEP 2026; updated 24 SEP 2026 05:20 UTC.</desc>
+<style>
+text { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Arial, sans-serif; font-optical-sizing: auto; }
+.heading { font-size: 29px; font-weight: 650; letter-spacing: -.9px; fill: #F5F5F7; }
+.score { font-size: 105px; font-weight: 650; letter-spacing: -4px; fill: #F5F5F7; }
+.unit { font-size: 15px; font-weight: 550; fill: #A7A7AE; }
+.status { font-weight: 650; letter-spacing: -1px; fill: #F5F5F7; }
+.quote { font-size: 14px; fill: #C6C6CC; }
+.team { font-size: 17px; font-weight: 650; fill: #F5F5F7; }
+.league { font-size: 13px; fill: #A7A7AE; }
+.foot { font-size: 11px; font-weight: 550; fill: #A7A7AE; }
+</style>
+<rect x="0.5" y="0.5" width="389" height="603" rx="23" fill="#1C1C1E" stroke="#38383A"/>
+<text x="24" y="51" class="heading">Matchday mood</text>
+<path d="M24 73H366" stroke="#38383A"/>
+<text x="24" y="179" class="score">70</text>
+<text x="157" y="175" class="unit">out of 100</text>
+<text x="24" y="229" class="status" font-size="40">Good.</text>
+<text x="24" y="267" class="quote">Holding ground. Steady pulse, shipping</text>
+<text x="24" y="286" class="quote">code.</text>
+<rect x="24" y="318" width="342" height="7" rx="3.5" fill="#3A3A3C"/>
+<rect x="24" y="318" width="239" height="7" rx="3.5" fill="#0A84FF"/>
+<path d="M24 348H366" stroke="#38383A"/>
+<text x="24" y="380" class="team">FC Barcelona</text>
+<text x="366" y="380" text-anchor="end" class="league">LaLiga</text>
+<circle cx="46.0" cy="415.0" r="21.0" fill="#1B3A2B"/>
+<text x="46.0" y="422.6" text-anchor="middle" font-size="19" font-weight="700" fill="#73DDA0">W</text>
+<circle cx="116.0" cy="415.0" r="21.0" fill="#1B3A2B"/>
+<text x="116.0" y="422.6" text-anchor="middle" font-size="19" font-weight="700" fill="#73DDA0">W</text>
+<circle cx="186.0" cy="415.0" r="21.0" fill="#1B3A2B"/>
+<text x="186.0" y="422.6" text-anchor="middle" font-size="19" font-weight="700" fill="#73DDA0">W</text>
+<circle cx="256.0" cy="415.0" r="21.0" fill="#1B3A2B"/>
+<text x="256.0" y="422.6" text-anchor="middle" font-size="19" font-weight="700" fill="#73DDA0">W</text>
+<circle cx="326.0" cy="415.0" r="21.0" fill="#1B3A2B"/>
+<text x="326.0" y="422.6" text-anchor="middle" font-size="19" font-weight="700" fill="#73DDA0">W</text>
+<text x="24" y="470" class="team">Junior FC</text>
+<text x="366" y="470" text-anchor="end" class="league">BetPlay</text>
+<circle cx="46.0" cy="505.0" r="21.0" fill="#442628"/>
+<text x="46.0" y="512.6" text-anchor="middle" font-size="19" font-weight="700" fill="#FF9292">L</text>
+<circle cx="116.0" cy="505.0" r="21.0" fill="#43351C"/>
+<text x="116.0" y="512.6" text-anchor="middle" font-size="19" font-weight="700" fill="#FFD078">D</text>
+<circle cx="186.0" cy="505.0" r="21.0" fill="#43351C"/>
+<text x="186.0" y="512.6" text-anchor="middle" font-size="19" font-weight="700" fill="#FFD078">D</text>
+<circle cx="256.0" cy="505.0" r="21.0" fill="#442628"/>
+<text x="256.0" y="512.6" text-anchor="middle" font-size="19" font-weight="700" fill="#FF9292">L</text>
+<circle cx="326.0" cy="505.0" r="21.0" fill="#1B3A2B"/>
+<text x="326.0" y="512.6" text-anchor="middle" font-size="19" font-weight="700" fill="#73DDA0">W</text>
+<path d="M24 547H366" stroke="#38383A"/>
+<text x="24" y="571" class="foot">Latest result · 20 SEP 2026</text>
+<text x="24" y="589" class="foot">Updated · 24 SEP 2026 05:20 UTC</text>
+</svg>
