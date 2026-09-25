@@ -4,7 +4,7 @@ Barranquilla, Colombia · UTC−5
 
 > Systems Engineering student in my final stage at Universidad de la Costa. I build projects focused on backend development, graph algorithms, web applications, and data analysis. I enjoy working through performance problems and writing clear, maintainable code.
 
-[Portfolio](https://portfolio-placeholder.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/estebandmr) &nbsp;·&nbsp; [GitHub](https://github.com/EstebanDMR) &nbsp;·&nbsp; [Email](mailto:mercadorachath@gmail.com)
+[Portfolio](https://estebandmr.vercel.app/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/estebandmr) &nbsp;·&nbsp; [GitHub](https://github.com/EstebanDMR) &nbsp;·&nbsp; [Email](mailto:mercadorachath@gmail.com)
 
 ---
 
@@ -123,7 +123,7 @@ Technologies used across the projects above, grouped by the work they support.
 
 I'm currently open to junior opportunities in software development and data analytics. I'm also open to discussing my projects and collaborating on open-source work.
 
-* **Portfolio:** [portfolio-placeholder.com](https://portfolio-placeholder.com)
+* **Portfolio:** [estebandmr.vercel.app](https://estebandmr.vercel.app/)
 * **LinkedIn:** [linkedin.com/in/estebandmr](https://www.linkedin.com/in/estebandmr)
 * **GitHub:** [github.com/EstebanDMR](https://github.com/EstebanDMR)
 * **Email:** [mercadorachath@gmail.com](mailto:mercadorachath@gmail.com)
