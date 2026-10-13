@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="468" viewBox="0 0 760 468" role="img" aria-labelledby="title desc" data-snapshot="{&quot;visual&quot;:9,&quot;matches&quot;:[[&quot;2026-09-09T16:45Z&quot;,&quot;W&quot;,&quot;5-1&quot;],[&quot;2026-09-13T14:15Z&quot;,&quot;W&quot;,&quot;4-2&quot;],[&quot;2026-09-16T19:30Z&quot;,&quot;W&quot;,&quot;7-2&quot;],[&quot;2026-09-19T19:00Z&quot;,&quot;W&quot;,&quot;3-1&quot;],[&quot;2026-10-10T16:30Z&quot;,&quot;W&quot;,&quot;3-0&quot;],[&quot;2026-09-20T19:00Z&quot;,&quot;W&quot;,&quot;4-1&quot;],[&quot;2026-09-27T01:20Z&quot;,&quot;W&quot;,&quot;2-0&quot;],[&quot;2026-10-01T01:00Z&quot;,&quot;L&quot;,&quot;1-3&quot;],[&quot;2026-10-04T23:10Z&quot;,&quot;L&quot;,&quot;1-3&quot;],[&quot;2026-10-10T23:10Z&quot;,&quot;D&quot;,&quot;2-2&quot;]]}">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="468" viewBox="0 0 760 468" role="img" aria-labelledby="title desc" data-snapshot="{&quot;visual&quot;:9,&quot;matches&quot;:[[&quot;2026-09-13T14:15Z&quot;,&quot;W&quot;,&quot;4-2&quot;],[&quot;2026-09-16T19:30Z&quot;,&quot;W&quot;,&quot;7-2&quot;],[&quot;2026-09-19T19:00Z&quot;,&quot;W&quot;,&quot;3-1&quot;],[&quot;2026-10-10T16:30Z&quot;,&quot;W&quot;,&quot;3-0&quot;],[&quot;2026-10-13T19:00Z&quot;,&quot;W&quot;,&quot;4-1&quot;],[&quot;2026-09-20T19:00Z&quot;,&quot;W&quot;,&quot;4-1&quot;],[&quot;2026-09-27T01:20Z&quot;,&quot;W&quot;,&quot;2-0&quot;],[&quot;2026-10-01T01:00Z&quot;,&quot;L&quot;,&quot;1-3&quot;],[&quot;2026-10-04T23:10Z&quot;,&quot;L&quot;,&quot;1-3&quot;],[&quot;2026-10-10T23:10Z&quot;,&quot;D&quot;,&quot;2-2&quot;]]}">
 <title id="title">Matchday mood</title>
-<desc id="desc">Mood score 8 of 10, status GOOD. Barcelona W W W W W; Junior W W L L D. Latest result 10 OCT 2026; updated 11 OCT 2026 12:11 UTC.</desc>
+<desc id="desc">Mood score 8 of 10, status GOOD. Barcelona W W W W W; Junior W W L L D. Latest result 13 OCT 2026; updated 13 OCT 2026 22:20 UTC.</desc>
 <style>
 text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
 .heading { font-size: 30px; font-weight: 650; letter-spacing: -1px; fill: #F5F5F7; }
@@ -60,6 +60,6 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-s
 <circle cx="666" cy="397" r="18" fill="#222226" stroke="#8A6831" stroke-width="1.5"/>
 <text x="666" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#F1C76B">D</text>
 <path d="M42 429H718" stroke="#35353A"/>
-<text x="42" y="451" class="foot">Latest result · 10 OCT 2026</text>
-<text x="718" y="451" text-anchor="end" class="foot">Updated · 11 OCT 2026 12:11 UTC</text>
+<text x="42" y="451" class="foot">Latest result · 13 OCT 2026</text>
+<text x="718" y="451" text-anchor="end" class="foot">Updated · 13 OCT 2026 22:20 UTC</text>
 </svg>
