@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="390" height="594" viewBox="0 0 390 594" role="img" aria-labelledby="title desc" data-snapshot="{&quot;visual&quot;:9,&quot;matches&quot;:[[&quot;2026-09-13T14:15Z&quot;,&quot;W&quot;,&quot;4-2&quot;],[&quot;2026-09-16T19:30Z&quot;,&quot;W&quot;,&quot;7-2&quot;],[&quot;2026-09-19T19:00Z&quot;,&quot;W&quot;,&quot;3-1&quot;],[&quot;2026-10-10T16:30Z&quot;,&quot;W&quot;,&quot;3-0&quot;],[&quot;2026-10-13T19:00Z&quot;,&quot;W&quot;,&quot;4-1&quot;],[&quot;2026-09-20T19:00Z&quot;,&quot;W&quot;,&quot;4-1&quot;],[&quot;2026-09-27T01:20Z&quot;,&quot;W&quot;,&quot;2-0&quot;],[&quot;2026-10-01T01:00Z&quot;,&quot;L&quot;,&quot;1-3&quot;],[&quot;2026-10-04T23:10Z&quot;,&quot;L&quot;,&quot;1-3&quot;],[&quot;2026-10-10T23:10Z&quot;,&quot;D&quot;,&quot;2-2&quot;]]}">
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="594" viewBox="0 0 390 594" role="img" aria-labelledby="title desc" data-snapshot="{&quot;visual&quot;:9,&quot;matches&quot;:[[&quot;2026-09-13T14:15Z&quot;,&quot;W&quot;,&quot;4-2&quot;],[&quot;2026-09-16T19:30Z&quot;,&quot;W&quot;,&quot;7-2&quot;],[&quot;2026-09-19T19:00Z&quot;,&quot;W&quot;,&quot;3-1&quot;],[&quot;2026-10-10T16:30Z&quot;,&quot;W&quot;,&quot;3-0&quot;],[&quot;2026-10-13T19:00Z&quot;,&quot;W&quot;,&quot;4-1&quot;],[&quot;2026-09-27T01:20Z&quot;,&quot;W&quot;,&quot;2-0&quot;],[&quot;2026-10-01T01:00Z&quot;,&quot;L&quot;,&quot;1-3&quot;],[&quot;2026-10-04T23:10Z&quot;,&quot;L&quot;,&quot;1-3&quot;],[&quot;2026-10-10T23:10Z&quot;,&quot;D&quot;,&quot;2-2&quot;],[&quot;2026-10-14T21:30Z&quot;,&quot;D&quot;,&quot;1-1&quot;]]}">
 <title id="title">Matchday mood</title>
-<desc id="desc">Mood score 8 of 10, status GOOD. Barcelona W W W W W; Junior W W L L D. Latest result 13 OCT 2026; updated 13 OCT 2026 22:20 UTC.</desc>
+<desc id="desc">Mood score 7 of 10, status GOOD. Barcelona W W W W W; Junior W L L D D. Latest result 14 OCT 2026; updated 15 OCT 2026 10:56 UTC.</desc>
 <style>
 text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
 .heading { font-size: 30px; font-weight: 650; letter-spacing: -1px; fill: #F5F5F7; }
@@ -18,9 +18,9 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-s
 <text x="25" y="53" class="heading">Matchday mood</text>
 <text x="365" y="49" text-anchor="end" class="fun">JUST FOR FUN</text>
 <path d="M25 74H365" stroke="#35353A"/>
-<text x="25" y="177" class="score" style="font-size:91px">8</text>
+<text x="25" y="177" class="score" style="font-size:91px">7</text>
 <text x="80" y="170" class="denominator" style="font-size:18px">/10</text>
-<circle cx="303" cy="157" r="50" fill="none" stroke="#353539" stroke-width="9"/><circle cx="303" cy="157" r="50" fill="none" stroke="#69DB8B" stroke-width="9" stroke-linecap="round" stroke-dasharray="251.33 314.16" transform="rotate(-90 303 157)"/><g aria-hidden="true"><circle cx="290" cy="150" r="2.5" fill="#69DB8B"/><circle cx="316" cy="150" r="2.5" fill="#69DB8B"/><path d="M285 165 Q303 183 321 165" fill="none" stroke="#69DB8B" stroke-width="3.2" stroke-linecap="round"/></g>
+<circle cx="303" cy="157" r="50" fill="none" stroke="#353539" stroke-width="9"/><circle cx="303" cy="157" r="50" fill="none" stroke="#69DB8B" stroke-width="9" stroke-linecap="round" stroke-dasharray="219.91 314.16" transform="rotate(-90 303 157)"/><g aria-hidden="true"><circle cx="290" cy="150" r="2.5" fill="#69DB8B"/><circle cx="316" cy="150" r="2.5" fill="#69DB8B"/><path d="M288 167 Q303 178 318 167" fill="none" stroke="#69DB8B" stroke-width="3.2" stroke-linecap="round"/></g>
 <text x="25" y="217" class="status">Good</text>
 <text x="25" y="247" class="quote" style="font-size:14px">A good run. Ready for the next</text><text x="25" y="266" class="quote" style="font-size:14px">challenge.</text>
 <path d="M25 292H365" stroke="#35353A"/>
@@ -47,19 +47,19 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-s
 <circle cx="47" cy="514" r="21" fill="none" stroke="#66DB91" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
 <circle cx="47" cy="514" r="19" fill="#222226" stroke="#2E794A" stroke-width="1.5"/>
 <text x="47" y="520.5" text-anchor="middle" font-size="15" font-weight="700" fill="#66DB91">W</text>
-<circle cx="115" cy="514" r="21" fill="none" stroke="#66DB91" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
-<circle cx="115" cy="514" r="19" fill="#222226" stroke="#2E794A" stroke-width="1.5"/>
-<text x="115" y="520.5" text-anchor="middle" font-size="15" font-weight="700" fill="#66DB91">W</text>
+<circle cx="115" cy="514" r="21" fill="none" stroke="#F07D80" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
+<circle cx="115" cy="514" r="19" fill="#222226" stroke="#904446" stroke-width="1.5"/>
+<text x="115" y="520.5" text-anchor="middle" font-size="15" font-weight="700" fill="#F07D80">L</text>
 <circle cx="183" cy="514" r="21" fill="none" stroke="#F07D80" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
 <circle cx="183" cy="514" r="19" fill="#222226" stroke="#904446" stroke-width="1.5"/>
 <text x="183" y="520.5" text-anchor="middle" font-size="15" font-weight="700" fill="#F07D80">L</text>
-<circle cx="251" cy="514" r="21" fill="none" stroke="#F07D80" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
-<circle cx="251" cy="514" r="19" fill="#222226" stroke="#904446" stroke-width="1.5"/>
-<text x="251" y="520.5" text-anchor="middle" font-size="15" font-weight="700" fill="#F07D80">L</text>
+<circle cx="251" cy="514" r="21" fill="none" stroke="#F1C76B" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
+<circle cx="251" cy="514" r="19" fill="#222226" stroke="#8A6831" stroke-width="1.5"/>
+<text x="251" y="520.5" text-anchor="middle" font-size="15" font-weight="700" fill="#F1C76B">D</text>
 <circle cx="319" cy="514" r="21" fill="none" stroke="#F1C76B" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
 <circle cx="319" cy="514" r="19" fill="#222226" stroke="#8A6831" stroke-width="1.5"/>
 <text x="319" y="520.5" text-anchor="middle" font-size="15" font-weight="700" fill="#F1C76B">D</text>
 <path d="M25 550H365" stroke="#35353A"/>
-<text x="25" y="568" class="foot" style="font-size:11px">Latest result · 13 OCT 2026</text>
-<text x="25" y="584" class="foot" style="font-size:11px">Updated · 13 OCT 2026 22:20 UTC</text>
+<text x="25" y="568" class="foot" style="font-size:11px">Latest result · 14 OCT 2026</text>
+<text x="25" y="584" class="foot" style="font-size:11px">Updated · 15 OCT 2026 10:56 UTC</text>
 </svg>

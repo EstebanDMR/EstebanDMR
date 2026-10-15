@@ -16,7 +16,7 @@ A small automated experiment that turns the five latest completed matches from *
 <!-- MOOD_START -->
 <picture>
   <source media="(max-width: 600px)" srcset="assets/mood-monitor-mobile.svg" />
-  <img src="assets/mood-monitor.svg" alt="Mood Monitor: 8/10, GOOD. Barcelona W W W W W; Junior W W L L D." />
+  <img src="assets/mood-monitor.svg" alt="Mood Monitor: 7/10, GOOD. Barcelona W W W W W; Junior W L L D D." />
 </picture>
 <!-- MOOD_END -->
 </div>
