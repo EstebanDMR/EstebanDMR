@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="468" viewBox="0 0 760 468" role="img" aria-labelledby="title desc" data-snapshot="{&quot;visual&quot;:9,&quot;matches&quot;:[[&quot;2026-10-20T19:00Z&quot;,&quot;L&quot;,&quot;2-4&quot;],[&quot;2026-10-25T20:00Z&quot;,&quot;L&quot;,&quot;1-2&quot;],[&quot;2026-10-31T20:00Z&quot;,&quot;W&quot;,&quot;6-1&quot;],[&quot;2026-11-03T20:00Z&quot;,&quot;W&quot;,&quot;3-0&quot;],[&quot;2026-11-08T20:00Z&quot;,&quot;W&quot;,&quot;2-1&quot;],[&quot;2026-10-14T21:30Z&quot;,&quot;D&quot;,&quot;1-1&quot;],[&quot;2026-10-19T01:10Z&quot;,&quot;D&quot;,&quot;0-0&quot;],[&quot;2026-10-24T01:10Z&quot;,&quot;W&quot;,&quot;1-0&quot;],[&quot;2026-10-28T01:05Z&quot;,&quot;D&quot;,&quot;1-1&quot;],[&quot;2026-10-31T23:00Z&quot;,&quot;L&quot;,&quot;2-3&quot;]]}">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="468" viewBox="0 0 760 468" role="img" aria-labelledby="title desc" data-snapshot="{&quot;visual&quot;:9,&quot;matches&quot;:[[&quot;2026-10-20T19:00Z&quot;,&quot;L&quot;,&quot;2-4&quot;],[&quot;2026-10-25T20:00Z&quot;,&quot;L&quot;,&quot;1-2&quot;],[&quot;2026-10-31T20:00Z&quot;,&quot;W&quot;,&quot;6-1&quot;],[&quot;2026-11-03T20:00Z&quot;,&quot;W&quot;,&quot;3-0&quot;],[&quot;2026-11-08T20:00Z&quot;,&quot;W&quot;,&quot;2-1&quot;],[&quot;2026-10-19T01:10Z&quot;,&quot;D&quot;,&quot;0-0&quot;],[&quot;2026-10-24T01:10Z&quot;,&quot;W&quot;,&quot;1-0&quot;],[&quot;2026-10-28T01:05Z&quot;,&quot;D&quot;,&quot;1-1&quot;],[&quot;2026-10-31T23:00Z&quot;,&quot;L&quot;,&quot;2-3&quot;],[&quot;2026-11-10T00:00Z&quot;,&quot;W&quot;,&quot;2-0&quot;]]}">
 <title id="title">Matchday mood</title>
-<desc id="desc">Mood score 6 of 10, status STEADY. Barcelona L L W W W; Junior D D W D L. Latest result 08 NOV 2026; updated 09 NOV 2026 15:20 UTC.</desc>
+<desc id="desc">Mood score 6 of 10, status STEADY. Barcelona L L W W W; Junior D W D L W. Latest result 10 NOV 2026; updated 10 NOV 2026 14:25 UTC.</desc>
 <style>
 text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
 .heading { font-size: 30px; font-weight: 650; letter-spacing: -1px; fill: #F5F5F7; }
@@ -47,19 +47,19 @@ text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-s
 <circle cx="418" cy="397" r="20" fill="none" stroke="#F1C76B" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
 <circle cx="418" cy="397" r="18" fill="#222226" stroke="#8A6831" stroke-width="1.5"/>
 <text x="418" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#F1C76B">D</text>
-<circle cx="480" cy="397" r="20" fill="none" stroke="#F1C76B" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
-<circle cx="480" cy="397" r="18" fill="#222226" stroke="#8A6831" stroke-width="1.5"/>
-<text x="480" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#F1C76B">D</text>
-<circle cx="542" cy="397" r="20" fill="none" stroke="#66DB91" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
-<circle cx="542" cy="397" r="18" fill="#222226" stroke="#2E794A" stroke-width="1.5"/>
-<text x="542" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#66DB91">W</text>
-<circle cx="604" cy="397" r="20" fill="none" stroke="#F1C76B" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
-<circle cx="604" cy="397" r="18" fill="#222226" stroke="#8A6831" stroke-width="1.5"/>
-<text x="604" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#F1C76B">D</text>
-<circle cx="666" cy="397" r="20" fill="none" stroke="#F07D80" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
-<circle cx="666" cy="397" r="18" fill="#222226" stroke="#904446" stroke-width="1.5"/>
-<text x="666" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#F07D80">L</text>
+<circle cx="480" cy="397" r="20" fill="none" stroke="#66DB91" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
+<circle cx="480" cy="397" r="18" fill="#222226" stroke="#2E794A" stroke-width="1.5"/>
+<text x="480" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#66DB91">W</text>
+<circle cx="542" cy="397" r="20" fill="none" stroke="#F1C76B" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
+<circle cx="542" cy="397" r="18" fill="#222226" stroke="#8A6831" stroke-width="1.5"/>
+<text x="542" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#F1C76B">D</text>
+<circle cx="604" cy="397" r="20" fill="none" stroke="#F07D80" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
+<circle cx="604" cy="397" r="18" fill="#222226" stroke="#904446" stroke-width="1.5"/>
+<text x="604" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#F07D80">L</text>
+<circle cx="666" cy="397" r="20" fill="none" stroke="#66DB91" stroke-opacity=".54" stroke-width="3" filter="url(#result-glow)"/>
+<circle cx="666" cy="397" r="18" fill="#222226" stroke="#2E794A" stroke-width="1.5"/>
+<text x="666" y="403.1" text-anchor="middle" font-size="14" font-weight="700" fill="#66DB91">W</text>
 <path d="M42 429H718" stroke="#35353A"/>
-<text x="42" y="451" class="foot">Latest result · 08 NOV 2026</text>
-<text x="718" y="451" text-anchor="end" class="foot">Updated · 09 NOV 2026 15:20 UTC</text>
+<text x="42" y="451" class="foot">Latest result · 10 NOV 2026</text>
+<text x="718" y="451" text-anchor="end" class="foot">Updated · 10 NOV 2026 14:25 UTC</text>
 </svg>
